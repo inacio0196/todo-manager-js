@@ -1,12 +1,28 @@
 {
-  "name": "todo-manager-js",
+  "name": "todo-manager",
   "version": "1.0.0",
   "description": "Package to handle todo.txt and done.txt files using the todo.txt writing pattern",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["todo", "todo.txt", "todo manager"],
+  "keywords": [
+    "todo",
+    "todo.txt",
+    "todo manager"
+  ],
   "author": "inacio0196",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inacio0196/todo-manager-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inacio0196/todo-manager-js/issues"
+  },
+  "homepage": "https://github.com/inacio0196/todo-manager-js#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "todo-parser": "^0.2.0"
+  }
 }
