@@ -2,22 +2,25 @@ const { getTodoTasks, parseTask, getDoneTasks } = require('./src/utils')
 
 function getTasks() {
   const tasks = getTodoTasks()
-  let detailedTasks = tasks.map(task => parseTask(task))
-  detailedTasks = detailedTasks.filter(task => task.original)
-
-  return detailedTasks
+  return tasks
 }
 
 function getDone() {
   const done = getDoneTasks()
-  let detailedDone = done.map(task => parseTask(task))
-  detailedDone = detailedDone.filter(task => task.original)
+  return done
+}
 
-  return detailedDone
+function pickTaskByPriority(priorityLetter) {
+  let tasks = getTasks()
+  tasks = tasks.filter(task => task.priority === priorityLetter)
+
+  return tasks
 }
 
 const task = getTasks()
+// const done = getDone()
 
 console.log(task)
+// console.log(done)
 
-module.exports = { getTasks, getDone }
+module.exports = { getTasks, getDone, pickTaskByPriority }
