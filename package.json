@@ -1,0 +1,12 @@
+{
+  "name": "todo-manager-js",
+  "version": "1.0.0",
+  "description": "Package to handle todo.txt and done.txt files using the todo.txt writing pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["todo", "todo.txt", "todo manager"],
+  "author": "inacio0196",
+  "license": "ISC"
+}
